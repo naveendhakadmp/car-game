@@ -1,0 +1,12 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Naveen Driving Car</title><link rel="stylesheet" href="style.css"></head><body><div id="game"></div>
+<div class="top"><div class="stats"><b id="level">LEVEL 1</b><span>🪙 <b id="coins">0</b></span><small id="xp">0 / 1000 XP</small><div class="bar"><i id="bar"></i></div></div><button id="garageBtn">🚘 GARAGE</button></div>
+<div class="topModes" id="gameModes"><button id="cam">CAMERA</button><button id="interior">INTERIOR</button></div>
+<button id="cockpitMusic" class="cockpitMusic">♫ MUSIC OFF</button>
+<div id="startScreen" class="startScreen"><section><div class="startLogo">NAVEEN DRIVING CAR</div><p>सीट बेल्ट बाँधो और ड्राइव शुरू करो!</p><button id="enterDrive">ENTER CAR · START DRIVE</button><small>पहले कार का इंटीरियर खुलेगा · म्यूजिक वहीं से ON/OFF करें</small></section></div>
+<div class="side"><button id="light">💡</button><button id="musicPanelBtn">♫</button><button id="sound">🔊</button></div>
+<div class="music" id="musicPanel"><b>Music Player</b><label class="file">अपना गाना चुनें<input type="file" id="audioFile" accept="audio/*"></label><div id="song">कोई गाना नहीं चुना</div><button id="play">▶ / Ⅱ</button><button id="musicOn">MUSIC OFF</button><input id="vol" type="range" min="0" max="1" step=".01" value=".7"></div>
+<div class="gear"><small>GEAR</small><div id="gears"><button>P</button><button>R</button><button>N</button><button class="active">D</button><button>S</button></div><button id="engine">ENGINE OFF</button></div>
+<div class="mobileSteer"><div id="wheel"><div class="wheelInner"><span>✦</span></div></div><small>STEER</small></div><div class="pedals"><button id="brake">BRAKE</button><button id="gas">ACCELERATOR</button></div>
+<div id="msg"></div><div class="garageModal" id="garage"><div class="garageHead"><b>GARAGE · CAR COLLECTION</b><button id="closeGarage">✕</button></div><div id="carGrid"></div></div>
+<div class="crash" id="crash"><section><h1>ACCIDENT!</h1><p>Traffic से टक्कर हो गई।</p><button id="restart">START AGAIN</button></section></div>
+<script type="module" src="game.js"></script></body></html>
